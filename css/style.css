@@ -1,0 +1,60 @@
+body {
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #0a0909d5;
+}
+
+header {
+    background-color: #000000;
+    padding: 20px;
+    text-align: center;
+}
+
+h1{
+    color: rgb(255, 238, 0);
+}
+
+h2{
+    color: aliceblue;
+}
+
+main {
+    padding: 20px;
+}
+
+#materias {
+    margin-bottom: 20px;
+}
+
+#lista-materias {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-gap: 20px;
+}
+
+.materia {
+    border: 1px solid #c5b8b8;
+    padding: 10px;
+}
+
+#formulario-materias {
+    border: 1px solid #ccc;
+    padding: 20px;
+}
+
+#form-materia input,
+#form-materia textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+}
+
+footer {
+    background-color: #000000;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    margin-top: 20px;
+}
