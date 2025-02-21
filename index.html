@@ -1,33 +1,65 @@
-
-<html>
+<!DOCTYPE html>
+<html lang="pt-BR">
 <head>
-    <title>Meu Blog</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog Arkham Universe</title>
     <link rel="stylesheet" href="/css/style.css">
 </head>
 <body>
     <header>
-        <h1>Batman blog</h1>
+        <h1>Blog Arkham Universe</h1>
+        <nav>
+            <ul>
+                <li><a href="inicio">Início</a></li>
+                <li><a href="noticias">Notícias</a></li>
+                <li><a href="destaque">Destaque</a></li>
+                <li><a href="gameplay">Gameplay</a></li>
+            </ul>
+        </nav>
     </header>
 
     <main>
-        <section id="materias">
-            <h2>Matérias</h2>
+        <section id="materias" id="inicio">
+            <h2>Matérias Recentes</h2>
+            <p>Fique por dentro de tudo que acontece no universo de Gotham e Batman! Jogos, lançamentos e muito mais.</p>
             <div id="lista-materias">
-                </div>
+                <!-- As matérias serão carregadas aqui via JavaScript -->
+            </div>
         </section>
 
-        <section id="formulario-materias">
-            <h2>Nova Matéria</h2>
+        <section id="formulario-materias" id="noticias">
+            <h2>Compartilhe Sua Matéria</h2>
             <form id="form-materia">
                 <input type="text" id="titulo" placeholder="Título" required>
                 <textarea id="conteudo" placeholder="Conteúdo" required></textarea>
-                <button type="submit">Salvar</button>
+                <button type="submit">Publicar</button>
             </form>
+        </section>
+
+        <section id="destaque-gamer" id="destaque">
+            <h2>Trilogia Arkham</h2>
+            <div>
+                <img src="https://image.api.playstation.com/vulcan/ap/rnd/202306/0915/33a2bc694cae0b6ea1210602a36360427af8486f3b10c0d4.jpg" alt="Imagem do jogo destaque" />
+                <h3>Um dos Jogos Mais Bem Avaliado pela Critica:Batman Arkham Knight</h3>
+                <p>"Arkham Knight traz a Gotham em ruínas e é o confronto final entre Batman e seus inimigos. Uma obra épica de ação e mistério que explora o lado mais sombrio da cidade."</p>
+                <a href="https://www.rocksteady.net/games/arkham-knight">Leia mais sobre o jogo</a>
+            </div>
+        </section>
+
+        <section id="video-gameplay" id="gameplay">
+            <h2>Gameplay do Origens</h2>
+            <div>
+                <iframe width="1460" height="815" src="https://www.youtube.com/embed/CtAUXbYdnvc" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+
+                <p>Assista à gameplay exclusiva do Batman Arkham Origens descubra o que espera por você nas ruas de Gotham.</p>
+            </div>
         </section>
     </main>
 
     <footer>
-        <p>&copy; 2023 Meu Blog</p>
+        <p>&copy; 2025 Blog Arkham Universe - Todos os direitos reservados</p>
     </footer>
 
     <script src="/js/script.js"></script>

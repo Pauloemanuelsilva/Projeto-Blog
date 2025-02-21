@@ -1,29 +1,65 @@
+/* Estilo para o tema Arkham (Escuro e Sombrio) */
 body {
-    font-family: sans-serif;
+    font-family: 'Arial', sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #0a0909d5;
+    background-color: #1b1b1b; /* Escuro, como a Gotham City */
+    color: #e5e5e5; /* Texto claro */
+    line-height: 1.6;
+    box-sizing: border-box;
 }
 
+/* Cabeçalho */
 header {
-    background-color: #000000;
+    background-color: #000; /* Preto, para remeter ao Batman */
     padding: 20px;
     text-align: center;
+    border-bottom: 5px solid #ffd700; /* Detalhes dourados para o Batman */
 }
 
-h1{
-    color: rgb(255, 238, 0);
+header h1 {
+    margin: 0;
+    font-size: 3em;
+    color: #ffd700; /* Cor dourada */
 }
 
-h2{
-    color: aliceblue;
+header nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 20px 0 0;
+    display: flex;
+    justify-content: center;
 }
 
+header nav ul li {
+    margin: 0 15px;
+}
+
+header nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 1.2em;
+    transition: color 0.3s ease;
+}
+
+header nav ul li a:hover {
+    color: #ffd700; /* Hover com a cor do Batman */
+}
+
+/* Conteúdo principal */
 main {
-    padding: 20px;
+    padding: 40px 20px;
 }
 
+/* Seção de matérias */
 #materias {
+    margin-bottom: 60px;
+}
+
+#materias h2 {
+    font-size: 2em;
+    color: #ffd700; /* Dourado, referência ao Batman */
+    text-align: center;
     margin-bottom: 20px;
 }
 
@@ -34,27 +70,157 @@ main {
 }
 
 .materia {
-    border: 1px solid #c5b8b8;
-    padding: 10px;
+    background-color: #333; /* Escuro */
+    border: 1px solid #444;
+    padding: 20px;
+    border-radius: 8px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
 }
 
+.materia:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.5);
+}
+
+.materia h2 {
+    margin-top: 0;
+    color: #ffd700;
+    font-size: 1.8em;
+}
+
+.materia p {
+    color: #ccc;
+    font-size: 1em;
+}
+
+/* Seção de destaque */
+#destaque-gamer {
+    margin-bottom: 60px;
+}
+
+#destaque-gamer h2 {
+    font-size: 2em;
+    color: #ffd700;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+#destaque-gamer img {
+    width: 50%;
+    border-radius: 8px;
+    margin-bottom: 15px;
+}
+
+#destaque-gamer a {
+    color: #ffd700;
+    text-decoration: none;
+    font-size: 1.2em;
+    transition: color 0.3s ease;
+}
+
+#destaque-gamer a:hover {
+    color: #e65c00;
+}
+
+/* Seção de gameplay */
+#video-gameplay {
+    margin-bottom: 60px;
+}
+
+#video-gameplay h2 {
+    font-size: 2em;
+    color: #ffd700;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+#video-gameplay iframe {
+    width: 100%;
+    height: 450px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+
+/* Formulário de matérias */
 #formulario-materias {
-    border: 1px solid #ccc;
+    background-color: #333;
+    border: 1px solid #444;
     padding: 20px;
+    border-radius: 8px;
+    margin-bottom: 60px;
 }
 
 #form-materia input,
 #form-materia textarea {
     width: 100%;
-    padding: 10px;
-    margin-bottom: 10px;
-    border: 1px solid #ccc;
+    padding: 15px;
+    margin-bottom: 15px;
+    border: 1px solid #444;
+    background-color: #222;
+    color: #fff;
+    border-radius: 4px;
+    font-size: 1.1em;
 }
 
+#form-materia input:focus,
+#form-materia textarea:focus {
+    border-color: #ffd700;
+    outline: none;
+}
+
+#form-materia button {
+    background-color: #ffd700;
+    color: #1b1b1b;
+    padding: 15px 25px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1.1em;
+    transition: background-color 0.3s ease;
+}
+
+#form-materia button:hover {
+    background-color: #e65c00;
+}
+
+/* Rodapé */
 footer {
-    background-color: #000000;
-    color: white;
+    background-color: #000;
+    color: #fff;
     text-align: center;
-    padding: 10px;
-    margin-top: 20px;
+    padding: 20px;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+footer p {
+    margin: 10px 0;
+}
+
+footer a {
+    color: #ffd700;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+footer a:hover {
+    color: #e65c00;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    #lista-materias {
+        grid-template-columns: 1fr;
+    }
+
+    header h1 {
+        font-size: 2.5em;
+    }
+
+    header nav ul {
+        flex-direction: column;
+        margin-top: 20px;
+    }
 }
